@@ -43,6 +43,8 @@
     --c5: #c991e1; --c13: #906cff;
     --c6: #aaffe4; --c14: #63f2f1;
     --c7: #cbe3e7; --c15: #a6b3cc;
+    background-color: var(--background);
+    font-family: MesloLGS, monospace;
 
 }
 c0{ color: var(--c0) } c8{ color: var(--c8) }
@@ -62,6 +64,7 @@ bc4{ background-color: var(--c4) } bc12{ background-color: var(--c12) }
 bc5{ background-color: var(--c5) } bc13{ background-color: var(--c13) }
 bc6{ background-color: var(--c6) } bc14{ background-color: var(--c14) }
 bc7{ background-color: var(--c7) } bc15{ background-color: var(--c15) }
+
 cli {
     font-family: MesloLGS, monospace;
     font-size: 10;
@@ -75,31 +78,34 @@ fetch {
     color: var(--c7);
     text-align: justify;
 }
-cat{
+
+cat {
     font-family: MesloLGS, monospace;
     font-size: 15;
     font-weight: normal;
     color: var(--c7);
     text-align: justify;
 }
-}
 comment {
     font-family: MesloLGS, monospace;
     font-size: 10;
     color: var(--c2)
 }
-body{
+
+body {
     font-family: MesloLGS, monospace;
     color: var(--foreground);
     background-color: var(--background);
     user-select: var(--selection_background);
 }
-footer{
+
+footer {
     font-family: MesloLGS, monospace;
     font-size: 30;
     font-weight: normal;
     color: purple;
 }
+
 .tab {
     display: inline-block;
     margin-left: 2em;

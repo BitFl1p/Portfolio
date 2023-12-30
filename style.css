@@ -1,0 +1,106 @@
+@font-face {
+    font-family: MesloLGS;
+    src: url('fonts/MesloLGS\ NF\ Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: MesloLGS;
+    src: url('fonts/MesloLGS\ NF\ Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: MesloLGS;
+    src: url('fonts/MesloLGS\ NF\ Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: MesloLGS;
+    src: url('fonts/MesloLGS\ NF\ Bold\ Italic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+:root{
+    --foreground: #cbe3e7;
+    --background: #1e1c31;
+    --selection_foreground: #1e1c31;
+    --selection_background: #aaffe4;
+
+    --active_tab_background: #565575;
+    --inactive_tab_background: #565575;
+    --active_tab_foreground: #95ffa4;
+    --inactive_tab_foreground: #cbe3e7;
+    
+    --active_border_color: #fbfcfc;
+
+    --c0: #565575; --c8: #100e23;
+    --c1: #ff8080; --c9: #ff5458;
+    --c2: #95ffa4; --c10: #62d196;
+    --c3: #ffe9aa; --c11: #ffb378;
+    --c4: #91ddff; --c12: #65b2ff;
+    --c5: #c991e1; --c13: #906cff;
+    --c6: #aaffe4; --c14: #63f2f1;
+    --c7: #cbe3e7; --c15: #a6b3cc;
+
+}
+c0{ color: var(--c0) } c8{ color: var(--c8) }
+c1{ color: var(--c1) } c9{ color: var(--c9) }
+c2{ color: var(--c2) } c10{ color: var(--c10) }
+c3{ color: var(--c3) } c11{ color: var(--c11) }
+c4{ color: var(--c4) } c12{ color: var(--c12) }
+c5{ color: var(--c5) } c13{ color: var(--c13) }
+c6{ color: var(--c6) } c14{ color: var(--c14) }
+c7{ color: var(--c7) } c15{ color: var(--c15) }
+
+bc0{ background-color: var(--c0) } bc8{ background-color: var(--c8) }
+bc1{ background-color: var(--c1) } bc9{ background-color: var(--c9) }
+bc2{ background-color: var(--c2) } bc10{ background-color: var(--c10) }
+bc3{ background-color: var(--c3) } bc11{ background-color: var(--c11) }
+bc4{ background-color: var(--c4) } bc12{ background-color: var(--c12) }
+bc5{ background-color: var(--c5) } bc13{ background-color: var(--c13) }
+bc6{ background-color: var(--c6) } bc14{ background-color: var(--c14) }
+bc7{ background-color: var(--c7) } bc15{ background-color: var(--c15) }
+cli {
+    font-family: MesloLGS, monospace;
+    font-size: 10;
+    font-weight: normal;
+    color: var(--c7);
+}
+fetch {
+    font-family: MesloLGS, monospace;
+    font-size: 15;
+    font-weight: normal;
+    color: var(--c7);
+    text-align: justify;
+}
+cat{
+    font-family: MesloLGS, monospace;
+    font-size: 15;
+    font-weight: normal;
+    color: var(--c7);
+    text-align: justify;
+}
+}
+comment {
+    font-family: MesloLGS, monospace;
+    font-size: 10;
+    color: var(--c2)
+}
+body{
+    font-family: MesloLGS, monospace;
+    color: var(--foreground);
+    background-color: var(--background);
+    user-select: var(--selection_background);
+}
+footer{
+    font-family: MesloLGS, monospace;
+    font-size: 30;
+    font-weight: normal;
+    color: purple;
+}
+.tab {
+    display: inline-block;
+    margin-left: 2em;
+}

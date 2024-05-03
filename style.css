@@ -109,4 +109,5 @@ input {
     user-select: var(--selection_background);
     border: 0;
     outline: none;
+    width: 90%;
 }

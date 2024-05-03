@@ -49,7 +49,7 @@ function Command(event) {
             case "help": textContent.innerHTML += commands[0]; break;
             case "fetch": textContent.innerHTML += commands[1]; break;
             case "clear": textContent.innerHTML = ""; break;
-            default: textContent.innerHTML += textBox.value + " is not a known command <br>"; break;
+            default: textContent.innerHTML += '"'+textBox.value+'"'+ " is not a known command <br>"; break;
         }
         textBox.value = "";
     }

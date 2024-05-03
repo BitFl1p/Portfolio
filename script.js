@@ -1,6 +1,6 @@
 // Variable Declaration
 var textContent;
-var textBox
+var textBox;
 
 const commands = [
 `
@@ -35,6 +35,7 @@ fetch   -   View my best projects <br>
 
 window.onload = function() {
     textContent = document.getElementById("content");
+    textBox = document.getElementById("command");
 };
 
 // The Rest
@@ -44,12 +45,15 @@ function ClickToAppend() {
 
 function Command(event) {
     if(event.key == 'Enter') {
-        switch(box.value) {
+        switch(textBox.value) {
             case "help": textContent.innerHTML += commands[0]; break;
             case "fetch": textContent.innerHTML += commands[1]; break;
             case "clear": textContent.innerHTML = ""; break;
-            default: textContent.innerHTML += box.value + " is not a known command"; break;
+            default: textContent.innerHTML += textBox.value + " is not a known command"; break;
         }
-        box.value = "";
+        textBox.value = "";
     }
 }
+document.addEventListener("click", function() {
+    textBox.select();
+})

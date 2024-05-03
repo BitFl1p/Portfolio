@@ -23,26 +23,26 @@
     font-style: italic;
 }
 :root{
-    --foreground: #cbe3e7;
-    --background: #1e1c31;
-    --selection_foreground: #1e1c31;
-    --selection_background: #aaffe4;
+    --foreground: #ebdbb2;
+    --background: #282828;
+    --selection_foreground: #282828;
+    --selection_background: #ebdbb2;
 
-    --active_tab_background: #565575;
-    --inactive_tab_background: #565575;
-    --active_tab_foreground: #95ffa4;
-    --inactive_tab_foreground: #cbe3e7;
+    --active_tab_background: #282828;
+    --inactive_tab_background: #282828;
+    --active_tab_foreground: #ebdbb2;
+    --inactive_tab_foreground: #ebdbb2;
     
     --active_border_color: #fbfcfc;
 
-    --c0: #565575; --c8: #100e23;
-    --c1: #ff8080; --c9: #ff5458;
-    --c2: #95ffa4; --c10: #62d196;
-    --c3: #ffe9aa; --c11: #ffb378;
-    --c4: #91ddff; --c12: #65b2ff;
-    --c5: #c991e1; --c13: #906cff;
-    --c6: #aaffe4; --c14: #63f2f1;
-    --c7: #cbe3e7; --c15: #a6b3cc;
+    --c0: #928374; --c8: #282828;
+    --c1: #fb4934; --c9: #cc241d;
+    --c2: #b8bb26; --c10: #98971a;
+    --c3: #fabd2f; --c11: #d79921;
+    --c4: #83a598; --c12: #458588;
+    --c5: #d3869b; --c13: #b16286;
+    --c6: #8ec07c; --c14: #689d6a;
+    --c7: #ebdbb2; --c15: #a89984;
     background-color: var(--background);
     font-family: MesloLGS, monospace;
 
@@ -98,15 +98,15 @@ body {
     background-color: var(--background);
     user-select: var(--selection_background);
 }
-
-footer {
-    font-family: MesloLGS, monospace;
-    font-size: 30;
-    font-weight: normal;
-    color: purple;
-}
-
 .tab {
     display: inline-block;
     margin-left: 2em;
+}
+input {
+    font-family: MesloLGS, monospace;
+    color: var(--foreground);
+    background-color: var(--background);
+    user-select: var(--selection_background);
+    border: 0;
+    outline: none;
 }

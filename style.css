@@ -139,3 +139,7 @@ hr {
     height: 1px;
     width: 100%;
 }
+
+a {
+    color: var(--c4);
+}

@@ -4,24 +4,28 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: MesloLGS;
     src: url('fonts/MesloLGS\ NF\ Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: MesloLGS;
     src: url('fonts/MesloLGS\ NF\ Italic.ttf');
     font-weight: normal;
     font-style: italic;
 }
+
 @font-face {
     font-family: MesloLGS;
     src: url('fonts/MesloLGS\ NF\ Bold\ Italic.ttf');
     font-weight: bold;
     font-style: italic;
 }
+
 :root{
     --foreground: #ebdbb2;
     --background: #282828;
@@ -47,6 +51,10 @@
     font-family: MesloLGS, monospace;
 
 }
+::placeholder {
+    color: var(--foreground);
+    opacity: 25%;
+}
 c0{ color: var(--c0) } c8{ color: var(--c8) }
 c1{ color: var(--c1) } c9{ color: var(--c9) }
 c2{ color: var(--c2) } c10{ color: var(--c10) }
@@ -71,6 +79,7 @@ cli {
     font-weight: normal;
     color: var(--c7);
 }
+
 fetch {
     font-family: MesloLGS, monospace;
     font-size: 15;
@@ -86,6 +95,7 @@ cat {
     color: var(--c7);
     text-align: justify;
 }
+
 comment {
     font-family: MesloLGS, monospace;
     font-size: 10;
@@ -98,10 +108,12 @@ body {
     background-color: var(--background);
     user-select: var(--selection_background);
 }
-.tab {
+
+tab {
     display: inline-block;
     margin-left: 2em;
 }
+
 input {
     font-family: MesloLGS, monospace;
     color: var(--foreground);
@@ -110,4 +122,20 @@ input {
     border: 0;
     outline: none;
     width: 90%;
+}
+
+.embed {
+    float: right;
+    margin-left: 35px;
+    position: absolute;
+}
+.hidden {
+    display: none;
+}
+
+hr {
+    border: none;
+    border-top: 5px dotted var(--foreground);
+    height: 1px;
+    width: 100%;
 }

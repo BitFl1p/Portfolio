@@ -43,7 +43,7 @@ const commands = [
     │ <c6>│</c6> <c7> A small mod I made to add my favourite character </c7> <br>
     │ <c6>│</c6> <c7> from Risk of Rain 2 into Risk of Rain 2013. </c7> <br>
     │ <c6>│</c6> <br>
-    │ <c6>│</c6> <c7> Check it out <a href="https://rainfusion.net/mod/2a7a6008-fee0-4b4c-b224-87146b4f38e9">here</a></c7><br>
+    │ <c6>│</c6> <c7> Check it out <a href="https://rainfusion.net/mod/2a7a6008-fee0-4b4c-b224-87146b4f38e9" target="_blank" rel="noreferrer noopener">here</a></c7><br>
     │ <c6>│</c6> <br>
     │ <c6></c6> <br>
     └─<c0>──</c0><c1>────</c1><c2>────</c2><c3>───────</c3><c7>     </c7><c4>───────</c4><c5>────</c5><c6>────</c6><c7>──</c7><br>

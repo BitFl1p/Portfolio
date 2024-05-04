@@ -7,11 +7,11 @@ const commands = [
 <cli>
 <hr>  Command List  <hr><br>
 <tab>
-<c1>help</c1>       <c2>View command list.</c2> <br><br>
-<c1>clear</c1>     <c2>Clear the console.</c2> <br><br>
+<c1>"help"</c1>       <c2>View command list.</c2> <br><br>
+<c1>"clear"</c1>     <c2>Clear the console.</c2> <br><br>
 <br>
-<c1>fetch-projects --main</c1>      <c2>View a list of my favourite past projects and current ongoing ones.</c2> <br><br>
-<c1>fetch-projects --misc</c1>      <c2>View a list of all other projects I have made and haven't included in the previous command (this command isn't complete)</c2> <br>
+<c1>"fetch"</c1> OR <c1>"fetch --main"</c1>      <c2>View a list of my favourite past projects and current ongoing ones.</c2> <br><br>
+<c1>"fetch --misc"</c1>      <c2>View a list of all other projects I have made and haven't included in the previous command (this command isn't complete)</c2> <br>
 </tab><br><br>
 <hr>
 </cli>
@@ -78,8 +78,8 @@ function Command(event) {
             else { 
                 textContent.innerHTML += (()=>{switch (textBox.value) {
                     case "help": return commands[0];
-                    case "fetch-projects --main": return commands[1];
-                    case "fetch-projects --misc": return commands[2];
+                    case "fetch": case "fetch --main": return commands[1];
+                    case "fetch --misc": return commands[2];
                     case "": return  "Please type a command. <br> Type 'help' for a list of commands";
                     default: return '"' + textBox.value + '"'+ " is not a known command. <br> Type 'help' for a list of commands";
                 }})();
